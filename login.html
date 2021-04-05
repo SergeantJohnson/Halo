@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login Page </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js" ></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css".css">
+    </head>
+
+    <body>
+
+     <div class="container">
+        <center>
+             <h1 class="header"> Halo-Chatters
+              <sup>
+                <img src="i1.2.jpg">
+              </sup>   
+            </h1>
+            <button id="logout" onclick="logout()" class="btn btn-danger"> Let the Covenant Glass the Planet (logout) </button>
+
+            <h3 id="user_name" class="color_white"></h3>
+            <div class="form-group input_div_room_page">
+                <label id="addsome"> #Add Spartan Fireteam: </label>
+                <input type="text" id="room_name" class="form-control" placeholder="Spartan Fireteam Name">
+            </div>
+            <button onclick="addRoom()" id="add"> #Add Fireteam </button>
+            <h3 class="color_white" id="name"> Some Fireteams: </h3>
+            <div id="output"></div>
+         </center>
+     </div>    
+    </body>
+</html>
